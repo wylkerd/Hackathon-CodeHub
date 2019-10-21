@@ -1,0 +1,28 @@
+﻿DROP TABLE IF EXISTS `testdb`.`contp`;
+CREATE TABLE  `testdb`.`contp` (
+  `n_serie2` int(11) NOT NULL,
+  `propiet2` varchar(25) NOT NULL,
+  `est_cheg2` date NOT NULL,
+  `peso2` float NOT NULL,
+  `cont2` varchar(25) NOT NULL,
+  `tipo2` varchar(25) NOT NULL,
+  `teus2` int(11) NOT NULL,
+  `data_cheg2` datetime DEFAULT NULL,
+  `pos2` varchar(5) DEFAULT NULL,
+  `email2` varchar(40) DEFAULT NULL,
+  `data_s2` date DEFAULT NULL,
+  PRIMARY KEY (`n_serie2`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+DROP TABLE IF EXISTS `testdb`.`contt`;
+CREATE TABLE  `testdb`.`contt` (
+  `n_serie` int(11) NOT NULL,
+  `propiet` varchar(25) NOT NULL,
+  `est_cheg` date NOT NULL,
+  `peso` float NOT NULL,
+  `cont` varchar(25) NOT NULL,
+  `tipo` varchar(25) NOT NULL,
+  `teus` int(11) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  PRIMARY KEY (`n_serie`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
